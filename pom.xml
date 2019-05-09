@@ -210,7 +210,7 @@
                     <artifactId>content-package-maven-plugin</artifactId>
                     <version>1.0.2</version>
                     <configuration>
-                        <targetURL>http://${aem.host}:${aem.port}/crx/packmgr/service.jsp</targetURL>
+                        <targetURL>http://${aem.host}:${aem.port}/crx/packmgr/index.jsp</targetURL>
                         <failOnError>true</failOnError>
                         <userId>${vault.user}</userId>
                         <password>${vault.password}</password>
@@ -424,7 +424,7 @@
                                         <goal>install</goal>
                                     </goals>
                                     <configuration>
-                                        <targetURL>http://${aem.host}:${aem.port}/crx/packmgr/service.jsp</targetURL>
+                                        <targetURL>http://${aem.host}:${aem.port}/crx/packmgr/index.jsp</targetURL>
                                     </configuration>
                                 </execution>
                             </executions>
@@ -464,7 +464,7 @@
                                         <goal>install</goal>
                                     </goals>
                                     <configuration>
-                                        <targetURL>http://${aem.publish.host}:${aem.publish.port}/crx/packmgr/service.jsp</targetURL>
+                                        <targetURL>http://${aem.publish.host}:${aem.publish.port}/crx/packmgr/index.jsp</targetURL>
                                     </configuration>
                                 </execution>
                             </executions>
